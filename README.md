@@ -1,2 +1,2 @@
 # eslint-json-parser
-A JSON parser for ESLint
+A JSON parser for ESLint.

@@ -1,1 +1,3 @@
-throw new Error('Nothing implemented so far.');
+const {parseJson} = require('./src/parseJson');
+
+exports.parseForESLint = parseJson;

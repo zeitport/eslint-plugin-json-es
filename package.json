@@ -1,6 +1,6 @@
 {
     "name": "@zeitport/eslint-parser-json",
-    "version": "1.0.0",
+    "version": "1.0.1-SNAPSHOT.0",
     "description": "A JSON parser for ESLint.",
     "main": "index.js",
     "scripts": {

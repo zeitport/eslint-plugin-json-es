@@ -35,31 +35,30 @@ Or use the `overrides` [ESLint] configuration to use the JSON parser only for `.
 ## Rules Configurations
 
 ### Recommended
+[@zeitport/eslint-parser-json/config/recommended](./config/recommended.js)
 
 |   |   | Rule                   |
 |---|---|------------------------|
 |✓|🔧| comma-dangle              |
-| |🔧| indent                    |
 |✓| | no-dupe-keys              |
+|✓| | no-irregular-whitespace   |
 |✓| | no-loss-of-precision      |
 |✓| | no-undefined              |
 |✓|🔧| quotes                   |
 
 ### Readable
+[@zeitport/eslint-parser-json/config/readable](./config/readable.js)
 
 |   |   | Rule                   | Comment |
 |---|---|------------------------|---------------------|
-| |🔧| indent ||
+| |🔧| indent | 4 |
 |✓|🔧| no-multiple-empty-lines | |
 |✓| | sort-keys |Alternative with fix [eslint-plugin-sort-keys-fix] |
+|✓|🔧| no-multiple-empty-lines | |
 
 ## Other JSON plugins/parsers
 
-### eslint-plugin-json
-[eslint-plugin-json]
-
-### eslint-plugin-jsonc
-[eslint-plugin-jsonc]
+- [Compare @zeitport/eslint-parser-json with eslint-plugin-json](docs/compare-eslint-plugin-json);
 
 [ESLint]: https://eslint.org/
 [custom parser]: https://eslint.org/docs/developer-guide/working-with-custom-parsers

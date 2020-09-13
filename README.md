@@ -19,14 +19,16 @@ npm install @zeitport/eslint-json-parser
 ```
 
 
-## Tested rules
+## Recommended rules
 
-| Rule              | Option                            |
-| ---               | ---                               |
-| comma-dangle      | `['error', 'never']`              |
-| indent            | `['error', 2]`                    |
-| no-undefined      | `['error']`                       |
-| quotes            | `['error', 'double']`             |
+|   |   | Rule                  |
+|---|---|-------------------------------------------|
+|✓|🔧| comma-dangle          |
+| |🔧| indent                |
+|✓| | no-dupe-keys          |
+|✓| | no-loss-of-precision  |
+|✓| | no-undefined          |
+|✓|🔧| quotes                |
 
 
 [ESLint]: https://eslint.org/

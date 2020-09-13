@@ -3,13 +3,13 @@ const {test, linter} = require('../testSandbox');
 const config = {
     parser: '@zeitport/eslint-json-parser',
     rules: {
-        'no-dupe-keys': ['error']
+        'no-loss-of-precision': ['error']
     }
 };
 
 test('lint incorrect', expect => {
     // Given
-    const code = `{"mars": "red", "mars": "blue"}`;
+    const code = `{"size": 1234567890123456789.0}`;
 
     // When
     const messages = linter.verify(code, config, {filename: 'test.json'});
@@ -17,14 +17,14 @@ test('lint incorrect', expect => {
     // Then
     const expectedMessage = {
         severity: 2,
-        ruleId: 'no-dupe-keys',
+        ruleId: 'no-loss-of-precision',
     };
     expect.like(messages[0], expectedMessage);
 });
 
 test('lint correct', expect => {
     // Given
-    const code = `{"mars": "red", "earth": "blue"}`;
+    const code = `{"size": 12345}`;
 
     // When
     const messages = linter.verify(code, config, {filename: 'test.json'});

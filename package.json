@@ -1,16 +1,11 @@
 {
     "name": "eslint-json-parser",
-    "version": "1.0.0-SNAPSHOT",
+    "version": "0.1.0-SNAPSHOT",
     "description": "A JSON parser for ESLint.",
     "main": "index.js",
     "scripts": {
         "lint": "eslint src",
-        "test": "ava --verbose ./test/lib/*.js ./test/rules/*.js",
-        "test:comma-dangle": "ava --verbose ./test/rules/comma-dangle.js",
-        "test:indent": "ava --verbose ./test/rules/indent.js",
-        "test:noDupeKeys": "ava --verbose ./test/rules/no-dupe-keys.js",
-        "test:noUndefined": "ava --verbose ./test/rules/no-undefined.js",
-        "test:quote": "ava --verbose ./test/rules/quotes.js.js"
+        "test": "ava --verbose ./test/lib/*.js ./test/rules/*.js"
     },
     "files": [
         "README.md",

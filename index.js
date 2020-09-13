@@ -1,3 +1,3 @@
-const {parseJson} = require('./src/parseJson');
+const {parseJson} = require('./lib/parseJson');
 
 exports.parseForESLint = parseJson;

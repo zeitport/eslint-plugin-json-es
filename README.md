@@ -4,13 +4,13 @@
 
 A JSON parser for [ESLint].
 
-## Install
+## Installation
 
 ```
 npm install @zeitport/eslint-parser-json
 ```
 
-## Usage
+## Configuration and Usage
 
 [ESLint] configuration
 ```
@@ -32,26 +32,37 @@ Or use the `overrides` [ESLint] configuration to use the JSON parser only for `.
 }
 ```
 
-## Recommended rules
+## Rules Configurations
 
-|   |   | Rule                  |
-|---|---|-------------------------------------------|
-|✓|🔧| comma-dangle          |
-| |🔧| indent                |
-|✓| | no-dupe-keys          |
-|✓| | no-loss-of-precision  |
-|✓| | no-undefined          |
-|✓|🔧| quotes                |
+### Recommended
 
+|   |   | Rule                   |
+|---|---|------------------------|
+|✓|🔧| comma-dangle              |
+| |🔧| indent                    |
+|✓| | no-dupe-keys              |
+|✓| | no-loss-of-precision      |
+|✓| | no-undefined              |
+|✓|🔧| quotes                   |
 
+### Readable
 
+|   |   | Rule                   | Comment |
+|---|---|------------------------|---------------------|
+| |🔧| indent ||
+|✓|🔧| no-multiple-empty-lines | |
+|✓| | sort-keys |Alternative with fix [eslint-plugin-sort-keys-fix] |
 
-## Alternatives
+## Other JSON plugins/parsers
 
 ### eslint-plugin-json
+[eslint-plugin-json]
 
-
+### eslint-plugin-jsonc
+[eslint-plugin-jsonc]
 
 [ESLint]: https://eslint.org/
 [custom parser]: https://eslint.org/docs/developer-guide/working-with-custom-parsers
 [eslint-plugin-json]: https://github.com/azeemba/eslint-plugin-json
+[eslint-plugin-jsonc]: https://github.com/ota-meshi/eslint-plugin-jsonc
+[eslint-plugin-sort-keys-fix]: https://github.com/leo-buneev/eslint-plugin-sort-keys-fix

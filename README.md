@@ -15,8 +15,19 @@ npm install @zeitport/eslint-parser-json
 [ESLint] configuration
 ```
 {
-    "parser": "@zeitport/eslint-parser-json,
+    "parser": "@zeitport/eslint-parser-json",
     "rules": {
+    }
+}
+```
+
+Or use the `overrides` [ESLint] configuration to use the JSON parser only for `.json` files.
+
+```
+{
+    "overrides": {
+        "files": ["*.json"],
+        "parser": "@zeitport/eslint-parser-json"
     }
 }
 ```
@@ -33,7 +44,6 @@ npm install @zeitport/eslint-parser-json
 |✓|🔧| quotes                |
 
 
-[ESLint]: https://eslint.org/
 
 
 ## Alternatives
@@ -42,3 +52,6 @@ npm install @zeitport/eslint-parser-json
 
 
 
+[ESLint]: https://eslint.org/
+[custom parser]: https://eslint.org/docs/developer-guide/working-with-custom-parsers
+[eslint-plugin-json]: https://github.com/azeemba/eslint-plugin-json

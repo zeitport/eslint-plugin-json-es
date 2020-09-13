@@ -1,45 +1,46 @@
-const test = require('ava');
-const Linter = require('eslint').Linter;
-const {parseJson} = require('../../src/parseJson');
+const {test} = require('../testSandbox');
+const {parseJson} = require('../../lib/parseJson');
 
-const config = {
-    parser: '@zeitport/eslint-parser-json',
-    rules: {
-        quotes: ['error', 'double']
-    }
-};
+const parserOptions = {
+    ecmaVersion: undefined,
+    loc: true,
+    range: true,
+    raw: true,
+    tokens: true,
+    comment: true,
+    eslintVisitorKeys: true,
+    eslintScopeManager: true,
+    filePath: 'test.json'
+}
 
-test('parse JSON code', t => {
+test('parseJson returns AST', expect => {
     // Given
-    const code = createJsonCode();
-    const linter = createLinter();
+    const code = createJson();
 
     // When
-    const messages = linter.verify(code, config, {filename: 'test.json'});
+    const parseObject = parseJson(code, parserOptions);
 
     // Then
-    t.notDeepEqual(messages, [{fatal: true}]);
+    expect.truthy(parseObject.ast);
 });
-
-/**
- * @returns {Linter}
- */
-function createLinter() {
-    const linter =  new Linter();
-
-    linter.defineParser('@zeitport/eslint-parser-json', {
-        parseForESLint: parseJson
-    });
-
-    return linter;
-}
 
 /**
  * @returns {string}
  */
-function createJsonCode() {
+function createJson() {
     const data = {
-        hello: 'world'
+        planets: [
+            {
+                name: 'Mars',
+                color: 'red'
+            },
+            {
+                name: 'Earth',
+                moons: 1,
+                dinos: [],
+                hasOxygen: true,
+            }
+        ]
     };
 
     return JSON.stringify(data, null, 4);

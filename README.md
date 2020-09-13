@@ -1,10 +1,11 @@
-# eslint-json-parser
+# @zeitport/eslint-parser-json
+
 A JSON parser for [ESLint].
 
 ## Install
 
 ```
-npm install @zeitport/eslint-json-parser
+npm install @zeitport/eslint-parser-json
 ```
 
 ## Usage
@@ -12,12 +13,11 @@ npm install @zeitport/eslint-json-parser
 [ESLint] configuration
 ```
 {
-    "parser": "@zeitport/eslint-json-parser,
+    "parser": "@zeitport/eslint-parser-json,
     "rules": {
     }
 }
 ```
-
 
 ## Recommended rules
 
@@ -34,4 +34,9 @@ npm install @zeitport/eslint-json-parser
 [ESLint]: https://eslint.org/
 
 
-## Compare to eslint-plugin-json
+## Alternatives
+
+### eslint-plugin-json
+
+
+

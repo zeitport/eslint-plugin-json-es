@@ -1,10 +1,10 @@
 {
-    "name": "eslint-json-parser",
+    "name": "@zeitport/eslint-parser-json",
     "version": "0.1.0",
     "description": "A JSON parser for ESLint.",
     "main": "index.js",
     "scripts": {
-        "lint": "eslint src",
+        "lint": "eslint lib",
         "test": "ava --verbose ./test/lib/*.js ./test/rules/*.js"
     },
     "files": [

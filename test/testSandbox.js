@@ -1,11 +1,11 @@
 const test = require('ava');
 const Linter = require('eslint').Linter;
-const {parseJson} = require('../src/parseJson');
+const {parseForESLint} = require('../index');
 
 const linter = new Linter();
 
-linter.defineParser('@zeitport/eslint-json-parser', {
-    parseForESLint: parseJson
+linter.defineParser('@zeitport/eslint-parser-json', {
+    parseForESLint
 });
 
 /**

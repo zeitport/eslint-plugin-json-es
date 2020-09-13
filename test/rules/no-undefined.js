@@ -1,7 +1,7 @@
 const {test, linter} = require('../testSandbox');
 
 const config = {
-    parser: '@zeitport/eslint-json-parser',
+    parser: '@zeitport/eslint-parser-json',
     rules: {
         'no-undefined': ['error']
     }

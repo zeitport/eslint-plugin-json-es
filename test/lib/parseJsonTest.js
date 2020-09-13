@@ -3,7 +3,7 @@ const Linter = require('eslint').Linter;
 const {parseJson} = require('../../src/parseJson');
 
 const config = {
-    parser: '@zeitport/eslint-json-parser',
+    parser: '@zeitport/eslint-parser-json',
     rules: {
         quotes: ['error', 'double']
     }
@@ -27,7 +27,7 @@ test('parse JSON code', t => {
 function createLinter() {
     const linter =  new Linter();
 
-    linter.defineParser('@zeitport/eslint-json-parser', {
+    linter.defineParser('@zeitport/eslint-parser-json', {
         parseForESLint: parseJson
     });
 

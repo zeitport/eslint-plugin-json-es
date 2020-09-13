@@ -1,3 +1,5 @@
+[![NPM version](https://img.shields.io/npm/v/@zeitport/eslint-parser-json.svg)](https://img.shields.io/npm/v/@zeitport/eslint-parser-json)
+
 # @zeitport/eslint-parser-json
 
 A JSON parser for [ESLint].

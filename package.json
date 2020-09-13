@@ -11,7 +11,8 @@
         "README.md",
         "src/**/*.js",
         "index.js",
-        "LICENSE"
+        "LICENSE",
+        "config"
     ],
     "repository": {
         "type": "git",

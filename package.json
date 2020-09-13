@@ -5,7 +5,12 @@
     "main": "index.js",
     "scripts": {
         "lint": "eslint src",
-        "test": "ava --verbose ./test/**/*Test.js"
+        "test": "ava --verbose ./test/lib/*.js ./test/rules/*.js",
+        "test:comma-dangle": "ava --verbose ./test/rules/comma-dangle.js",
+        "test:indent": "ava --verbose ./test/rules/indent.js",
+        "test:noDupeKeys": "ava --verbose ./test/rules/no-dupe-keys.js",
+        "test:noUndefined": "ava --verbose ./test/rules/no-undefined.js",
+        "test:quote": "ava --verbose ./test/rules/quotes.js.js"
     },
     "files": [
         "README.md",

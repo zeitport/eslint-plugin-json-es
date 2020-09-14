@@ -6,9 +6,7 @@
     "scripts": {
         "lint": "eslint lib",
         "test": "ava --verbose ./test/lib/*.js ./test/rules/*.js",
-        "preversion": "npm test",
-        "postversion": "git push && git push --tags",
-        "postpublish": "npm version prepatch && git push && git push --tags"
+        "prepublish": "npm test"
     },
     "files": [
         "README.md",

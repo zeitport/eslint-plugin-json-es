@@ -10,7 +10,7 @@
     },
     "files": [
         "README.md",
-        "src/**/*.js",
+        "lib",
         "index.js",
         "LICENSE",
         "config"

@@ -32,6 +32,9 @@ Or use the `overrides` [ESLint] configuration to use the JSON parser only for `.
 }
 ```
 
+## Example
+See the [example branch] for a small complete example with one JSON file and an ESLint configuration.
+
 ## Rules Configurations
 
 ### Recommended
@@ -65,3 +68,4 @@ Or use the `overrides` [ESLint] configuration to use the JSON parser only for `.
 [eslint-plugin-json]: https://github.com/azeemba/eslint-plugin-json
 [eslint-plugin-jsonc]: https://github.com/ota-meshi/eslint-plugin-jsonc
 [eslint-plugin-sort-keys-fix]: https://github.com/leo-buneev/eslint-plugin-sort-keys-fix
+[example branch]: https://github.com/zeitport/eslint-parser-json/tree/example

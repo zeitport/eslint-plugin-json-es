@@ -58,7 +58,7 @@ Or use the `overrides` [ESLint] configuration to use the JSON parser only for `.
 
 ## Other JSON plugins/parsers
 
-- [Compare @zeitport/eslint-parser-json with eslint-plugin-json](docs/compare-eslint-plugin-json);
+- [Compare @zeitport/eslint-parser-json with eslint-plugin-json](docs/compare-eslint-plugin-json.md);
 
 [ESLint]: https://eslint.org/
 [custom parser]: https://eslint.org/docs/developer-guide/working-with-custom-parsers

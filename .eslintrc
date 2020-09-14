@@ -1,0 +1,14 @@
+{
+    "plugins": [
+        "sort-keys-fix"
+    ],
+    "extends": "./node_modules/@zeitport/eslint-parser-json/config/readable",
+    "overrides": [{
+        "files": ["*.json"],
+        "parser": "@zeitport/eslint-parser-json"
+    }],
+    "rules":{
+        "sort-keys-fix/sort-keys-fix": "error"
+    }
+}
+

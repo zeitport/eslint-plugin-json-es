@@ -25,10 +25,10 @@ Or use the `overrides` [ESLint] configuration to use the JSON parser only for `.
 
 ```
 {
-    "overrides": {
+    "overrides": [{
         "files": ["*.json"],
         "parser": "@zeitport/eslint-parser-json"
-    }
+    }]
 }
 ```
 

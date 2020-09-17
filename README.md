@@ -1,4 +1,5 @@
 [![NPM version](https://img.shields.io/npm/v/@zeitport/eslint-parser-json.svg)](https://img.shields.io/npm/v/@zeitport/eslint-parser-json)
+[![CI status](https://github.com/zeitport/eslint-parser-json/workflows/CI/badge.svg?branch=master&event=push)](https://github.com/zeitport/eslint-parser-json/actions?query=workflow%3ACI)
 
 # @zeitport/eslint-parser-json
 

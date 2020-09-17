@@ -2,7 +2,7 @@
 
 # @zeitport/eslint-parser-json
 
-A JSON parser for [ESLint].
+A JSON parser for [ESLint] that works with existing ESLint rules or your custom rules.
 
 ## Installation
 
@@ -33,12 +33,12 @@ Or use the `overrides` [ESLint] configuration to use the JSON parser only for `.
 ```
 
 ## Example
-See the [example branch] for a small complete example with one JSON file and an ESLint configuration.
+See the [example branch] for a small complete example with one JSON file and an [ESLint] configuration.
 
 ## Rules Configurations
 
 ### Recommended
-[@zeitport/eslint-parser-json/config/recommended](./config/recommended.js)
+[./config/recommended.js](./config/recommended.js)
 
 |   |   | Rule                   |
 |---|---|------------------------|
@@ -50,7 +50,9 @@ See the [example branch] for a small complete example with one JSON file and an 
 |✓|🔧| quotes                   |
 
 ### Readable
-[@zeitport/eslint-parser-json/config/readable](./config/readable.js)
+Based on the recommended rules with stylistic aspects.
+
+[./config/readable.js](./config/readable.js)
 
 |   |   | Rule                   | Comment |
 |---|---|------------------------|---------------------|

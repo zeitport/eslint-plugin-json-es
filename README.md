@@ -41,26 +41,26 @@ See the [example branch] for a small complete example with one JSON file and an 
 ### Recommended
 [./config/recommended.js](./config/recommended.js)
 
-|   |   | Rule                   |
-|---|---|------------------------|
-|✓|🔧| comma-dangle              |
-|✓| | no-dupe-keys              |
-|✓| | no-irregular-whitespace   |
-|✓| | no-loss-of-precision      |
-|✓| | no-undefined              |
-|✓|🔧| quotes                   |
+| Auto-fix | Rule                   |
+|----------|------------------------|
+|🔧| comma-dangle              |
+| | no-dupe-keys              |
+| | no-irregular-whitespace   |
+| | no-loss-of-precision      |
+| | no-undefined              |
+|🔧| quotes                   |
 
 ### Readable
 Based on the recommended rules with stylistic aspects.
 
 [./config/readable.js](./config/readable.js)
 
-|   |   | Rule                   | Comment |
-|---|---|------------------------|---------------------|
-| |🔧| indent | 4 |
-|✓|🔧| no-multiple-empty-lines | |
-|✓| | sort-keys |Alternative with fix [eslint-plugin-sort-keys-fix] |
-|✓|🔧| no-multiple-empty-lines | |
+| Auto-fix | Rule                   | Comment |
+|----------|------------------------|---------------------|
+|🔧| indent | 4 |
+|🔧| no-multiple-empty-lines | |
+| | sort-keys |Alternative with fix [eslint-plugin-sort-keys-fix] |
+|🔧| no-multiple-empty-lines | |
 
 ## Other JSON plugins/parsers
 

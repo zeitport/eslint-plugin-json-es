@@ -136,8 +136,8 @@ eslint planets.json --fix
 ```
 
 # Resources
-[Working with Plugins]
-[Working with Rules]
+- [Working with Plugins]
+- [Working with Rules]
 
 
 [JSON file]: https://github.com/zeitport/eslint-parser-json/tree/example/custom-json-rule/planets.json

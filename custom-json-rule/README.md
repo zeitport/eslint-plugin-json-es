@@ -144,5 +144,5 @@ eslint planets.json --fix
 [ESLint configuration file]: https://github.com/zeitport/eslint-parser-json/tree/example/custom-json-rule/.eslintrc
 [Working with Rules]: https://eslint.org/docs/developer-guide/working-with-rules
 [Working with Plugins]: https://eslint.org/docs/developer-guide/working-with-plugins
-[no-underscore]: https://github.com/zeitport/eslint-parser-json/tree/example/eslint-plugins-json-test/no-underscore.js
-[/eslint-plugins-json-test/no-underscore.js]: https://github.com/zeitport/eslint-parser-json/tree/example/eslint-plugins-json-test/no-underscore.js
+[no-underscore]: https://github.com/zeitport/eslint-parser-json/blob/example/eslint-plugin-json-test/no-underscore.js
+[/eslint-plugins-json-test/no-underscore.js]: https://github.com/zeitport/eslint-parser-json/blob/example/eslint-plugin-json-test/no-underscore.js

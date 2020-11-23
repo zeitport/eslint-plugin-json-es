@@ -51,9 +51,9 @@ module.exports = {
 Time to read some documentation at [Working with Rules].
 Checkout the rule implementation at [/eslint-plugins-json-test/no-underscore.js]
 
-🚀 Use the [AST explorer](https://astexplorer.net/) to parse JavaScript code
-🔥 Put `()` around your JSON to create valid JavaScript. [AST Explorer Example](https://astexplorer.net/#/gist/006da4d4da90e46469df37a78596f11a/057ea1a4eb374bb46468eb04237d946a798fe762)
-💡 Select the node type you want to check. In our example we want to check all `Property` nodes.
+- 🚀 Use the [AST explorer](https://astexplorer.net/) to parse JavaScript code
+- 🔥 Put `()` around your JSON to create valid JavaScript. [AST Explorer Example](https://astexplorer.net/#/gist/006da4d4da90e46469df37a78596f11a/057ea1a4eb374bb46468eb04237d946a798fe762)
+- 💡 Select the node type you want to check. In our example we want to check all `Property` nodes.
 
 ## Installation
 

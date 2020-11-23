@@ -9,7 +9,7 @@ npm install eslint --save-dev
 npm install @zeitport/eslint-parser-json --save-dev
 ```
 
-## Create an example [JSON file]
+## [JSON file]
 
 This is an example of an invalid JSON file. It has a comma (`,`) after every `name` property. This is a very common and hard to spot problem when manually editing a JSON file with copy&paste.
 
@@ -28,7 +28,7 @@ This is an example of an invalid JSON file. It has a comma (`,`) after every `na
 }
 ```
 
-## Create an [ESLint configuration file]
+## [ESLint configuration file]
 
 The _.eslintrc_ configuration file uses [comma-dangle] rule that is provided by ESLint.
 
@@ -55,7 +55,7 @@ cd get-started
 eslint planets.json
 ```
 
-## Fix
+## Auto-Fix
 
 To fix the json file and remove the dangle commas run:
 

@@ -1,0 +1,12 @@
+{
+    "planets": [
+        {
+            "_id": "id-000-mars",
+            "name": "mars"
+        },
+        {
+            "_id": "id-001-earth",
+            "name": "earth"
+        }
+    ]
+}

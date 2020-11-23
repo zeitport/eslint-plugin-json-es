@@ -11,7 +11,7 @@ npm install @zeitport/eslint-parser-json --save-dev
 
 ## Create an example [JSON file]
 
-This JSON file is not valid, because it has a comma (,) after the last property value of a _planet_.
+This is an example of an invalid JSON file. It has a comma (`,`) after every `name` property. This is a very common and hard to spot problem when manually editing a JSON file with copy&paste.
 
 ```json
 {

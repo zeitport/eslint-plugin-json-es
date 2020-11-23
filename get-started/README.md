@@ -63,6 +63,10 @@ To fix the json file and remove the dangle commas run:
 eslint planets.json --fix
 ```
 
+# Resources
+[Configuring ESLint](https://eslint.org/docs/user-guide/configuring)
+
+
 [JSON file]: https://github.com/zeitport/eslint-parser-json/tree/example/get-started/planets.json
 [eslint configuration file]: https://github.com/zeitport/eslint-parser-json/tree/example/get-started/.eslintrc
 [comma-dangle]: https://eslint.org/docs/rules/comma-dangle

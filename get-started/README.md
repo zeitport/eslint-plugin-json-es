@@ -44,8 +44,6 @@ The _.eslintrc_ configuration file uses [comma-dangle] rule that is provided by 
 }
 ```
 
-This project contains a JSON file and an ESLint configuration using @zeitport/eslint-parser-json.
-
 ## Lint
 
 To lint the json file run:
@@ -77,5 +75,5 @@ eslint planets.json --fix
 
 
 [JSON file]: https://github.com/zeitport/eslint-parser-json/tree/example/get-started/planets.json
-[eslint configuration file]: https://github.com/zeitport/eslint-parser-json/tree/example/get-started/.eslintrc
+[ESLint configuration file]: https://github.com/zeitport/eslint-parser-json/tree/example/get-started/.eslintrc
 [comma-dangle]: https://eslint.org/docs/rules/comma-dangle

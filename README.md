@@ -1,15 +1,9 @@
-# Example eslint-json-parser configuration
+# Example usages of @zeitport/eslint-parser-json
 
-This project contains a JSON file and an ESLint configuration using @zeitport/eslint-parser-json.
 
-Lint the JSON file with:
+| Example               | Description                                           |
+| --------------------- | ----------------------------------------------------- |
+| [get-started]         | Lints a simple JSON file with one rule                |
 
-```
-eslint planets.json
-```
 
-Change the file and try to fix it with:
-```
-eslint planets.json --fix
-```
-
+[get-started]: https://github.com/zeitport/eslint-parser-json/tree/example/get-started/README.md

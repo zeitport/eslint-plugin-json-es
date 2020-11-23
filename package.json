@@ -4,8 +4,8 @@
     "description": "Example usage of ESLint with @zeitport/eslint-parser-json",
     "main": "index.js",
     "scripts": {
-        "lint:planets": "eslint planets.json",
-        "fix:planets": "eslint planets.json --fix",
+        "lint:planets": "node_modules/.bin/eslint planets.json",
+        "fix:planets": "node_modules/.bin/eslint planets.json --fix",
         "prepublish": "exit 1"
     },
     "repository": {
@@ -13,11 +13,7 @@
         "url": "git+https://github.com/zeitport/eslint-parser-json.git"
     },
     "private": true,
-    "author": "Christian Schuller <cschuller@servusalps.com>",
     "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/zeitport/eslint-parser-json/issues"
-    },
     "homepage": "https://github.com/zeitport/eslint-parser-json#readme",
     "devDependencies": {
         "@zeitport/eslint-parser-json": "^1.0.1",

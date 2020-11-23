@@ -55,6 +55,15 @@ cd get-started
 eslint planets.json
 ```
 
+```cmd
+M:\github\zeitport\eslint-parser-json\example\get-started\planets.json
+  5:27  error  Unexpected trailing comma  comma-dangle
+  9:28  error  Unexpected trailing comma  comma-dangle
+
+✖ 2 problems (2 errors, 0 warnings)
+  2 errors and 0 warnings potentially fixable with the `--fix` option.
+```
+
 ## Auto-Fix
 
 To fix the json file and remove the dangle commas run:

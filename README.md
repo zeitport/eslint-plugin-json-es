@@ -60,7 +60,6 @@ Based on the recommended rules with stylistic aspects.
 |🔧| indent | 4 |
 |🔧| no-multiple-empty-lines | |
 | | sort-keys |Alternative with fix [eslint-plugin-sort-keys-fix] |
-|🔧| no-multiple-empty-lines | |
 
 ## Other JSON plugins/parsers
 

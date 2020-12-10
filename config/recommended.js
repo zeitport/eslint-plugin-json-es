@@ -5,6 +5,7 @@ module.exports = {
         'no-loss-of-precision': ['error'],
         'no-undefined': ['error'],
         'no-irregular-whitespace': ['error'],
-        quotes: ['error', 'double']
+        quotes: ['error', 'double'],
+        'quote-props': ['error', 'always']
     }
 };

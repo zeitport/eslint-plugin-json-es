@@ -43,12 +43,13 @@ See the [example branch] for a small complete example with one JSON file and an 
 
 | Auto-fix | Rule                   |
 |----------|------------------------|
-|🔧| comma-dangle              |
-| | no-dupe-keys              |
-| | no-irregular-whitespace   |
-| | no-loss-of-precision      |
-| | no-undefined              |
-|🔧| quotes                   |
+|🔧| comma-dangle                    |
+| | no-dupe-keys                    |
+| | no-irregular-whitespace         |
+| | no-loss-of-precision            |
+| | no-undefined                    |
+|🔧| quotes                          |
+|🔧| quote-props                     |
 
 ### Readable
 Based on the recommended rules with stylistic aspects.
@@ -61,8 +62,23 @@ Based on the recommended rules with stylistic aspects.
 |🔧| no-multiple-empty-lines | |
 | | sort-keys |Alternative with fix [eslint-plugin-sort-keys-fix] |
 
-## Other JSON plugins/parsers
+## Alternative JSON plugins/parsers
 
+Here are already some ESLint plugins to lint JSON.
+
+- [eslint-plugin-json](https://www.npmjs.com/package/eslint-plugin-json)
+- [eslint-plugin-jsonc](https://www.npmjs.com/package/eslint-plugin-jsonc)
+
+|                           | @zeitport/eslint-plugin-json  | eslint-plugin-json        | eslint-plugin-jsonc       |
+| ---                       | ----------------------------- | ------------------------- | ------------------------- |
+| Engine                    | Uses ESLint's espree parser   | Custom parser             | Custom AST parser         |
+| Custom rules              | ✔                             | ❌                        | ✔                         |
+| Use existing ESLint rules | ✔ (only JSON compatible ones) | ❌                        | ❌                         |
+| Special JSON rules        | ❌ (planned)                   | ✔                        | ✔                         |
+| ESLint version            | >7.0.0                        | ?                         | >6.0.0                    |
+
+
+Deep compare guides:
 - [Compare @zeitport/eslint-plugin-json with eslint-plugin-json](docs/compare-eslint-plugin-json.md);
 
 [ESLint]: https://eslint.org/

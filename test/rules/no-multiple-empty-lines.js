@@ -1,7 +1,7 @@
 const {test, linter, verifyAndFix} = require('../testSandbox');
 
 const config = {
-    parser: '@zeitport/eslint-parser-json',
+    parser: '@zeitport/eslint-plugin-json',
     rules: {
         'no-multiple-empty-lines': ['error', {max: 1}]
     }

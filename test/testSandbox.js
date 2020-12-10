@@ -4,7 +4,7 @@ const {parseForESLint} = require('../index');
 
 const linter = new Linter();
 
-linter.defineParser('@zeitport/eslint-parser-json', {
+linter.defineParser('@zeitport/eslint-plugin-json', {
     parseForESLint
 });
 

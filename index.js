@@ -1,3 +1,11 @@
 const {parseJson} = require('./lib/parseJson');
+const recommendedConfig = require('./config/recommended');
+const style = require('./config/style');
 
-exports.parseForESLint = parseJson;
+module.exports = {
+    parseForESLint: parseJson,
+    configs: {
+        recommended: recommendedConfig,
+        style: style
+    }
+};

@@ -15,7 +15,7 @@
     "license": "MIT",
     "homepage": "https://github.com/zeitport/eslint-plugin-json#readme",
     "devDependencies": {
-        "@zeitport/eslint-plugin-json": "../latest/",
+        "@zeitport/eslint-plugin-json": "^1.0.2",
         "eslint": "^7.9.0",
         "eslint-plugin-sort-keys-fix": "^1.1.1",
         "@zeitport/eslint-plugin-json-test": "file:eslint-plugin-json-test"

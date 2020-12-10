@@ -1,0 +1,12 @@
+{
+    "planets": [
+        {
+            "color": "red",
+            "name": "mars",
+        },
+        {
+            "color": "blue",
+            "name": "earth",
+        }
+    ]
+}

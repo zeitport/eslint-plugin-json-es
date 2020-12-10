@@ -57,11 +57,11 @@ Checkout the rule implementation at [/eslint-plugins-json-test/no-underscore.js]
 
 ## Installation
 
-No we need to install the runtime (ESLint), the JSON parser (@zeitport/eslint-parser-json) and our ESLint plugin.
+No we need to install the runtime (ESLint), the JSON parser (@zeitport/eslint-plugin-json) and our ESLint plugin.
 
 ```
 npm install eslint --save-dev
-npm install @zeitport/eslint-parser-json --save-dev
+npm install @zeitport/eslint-plugin-json --save-dev
 ```
 
 In our use case the `eslint-plugin` is located in a sub folder.
@@ -100,7 +100,7 @@ The _.eslintrc_ configuration file uses our custom [no-underscore] rule that is 
     ],
     "overrides": [{
         "files": ["*.json"],
-        "parser": "@zeitport/eslint-parser-json"
+        "parser": "@zeitport/eslint-plugin-json"
     }],
     "rules": {
         "@zeitport/json-test/no-underscore": ["error"]
@@ -119,7 +119,7 @@ eslint planets.json
 ```
 
 ```cmd
-M:\github\zeitport\eslint-parser-json\example\custom-json-rule\planets.json
+M:\github\zeitport\eslint-plugin-json\example\custom-json-rule\planets.json
   4:13  error  The property "_id" starts with a reserved character "_"  @zeitport/json-test/no-underscore
   8:13  error  The property "_id" starts with a reserved character "_"  @zeitport/json-test/no-underscore
 
@@ -140,9 +140,9 @@ eslint planets.json --fix
 - [Working with Rules]
 
 
-[JSON file]: https://github.com/zeitport/eslint-parser-json/tree/example/custom-json-rule/planets.json
-[ESLint configuration file]: https://github.com/zeitport/eslint-parser-json/tree/example/custom-json-rule/.eslintrc
+[JSON file]: https://github.com/zeitport/eslint-plugin-json/tree/example/custom-json-rule/planets.json
+[ESLint configuration file]: https://github.com/zeitport/eslint-plugin-json/tree/example/custom-json-rule/.eslintrc
 [Working with Rules]: https://eslint.org/docs/developer-guide/working-with-rules
 [Working with Plugins]: https://eslint.org/docs/developer-guide/working-with-plugins
-[no-underscore]: https://github.com/zeitport/eslint-parser-json/blob/example/eslint-plugin-json-test/no-underscore.js
-[/eslint-plugins-json-test/no-underscore.js]: https://github.com/zeitport/eslint-parser-json/blob/example/eslint-plugin-json-test/no-underscore.js
+[no-underscore]: https://github.com/zeitport/eslint-plugin-json/blob/example/eslint-plugin-json-test/no-underscore.js
+[/eslint-plugins-json-test/no-underscore.js]: https://github.com/zeitport/eslint-plugin-json/blob/example/eslint-plugin-json-test/no-underscore.js

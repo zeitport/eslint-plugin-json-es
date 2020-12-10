@@ -1,22 +1,21 @@
 {
-    "name": "@zeitport/eslint-parser-json-example",
+    "name": "@zeitport/eslint-plugin-json-example",
     "version": "1.0.0",
-    "description": "Example usage of ESLint with @zeitport/eslint-parser-json",
+    "description": "Example usage of ESLint with @zeitport/eslint-plugin-json",
     "main": "index.js",
     "scripts": {
         "lint:planets": "node_modules/.bin/eslint planets.json",
-        "fix:planets": "node_modules/.bin/eslint planets.json --fix",
-        "prepublish": "exit 1"
+        "fix:planets": "node_modules/.bin/eslint planets.json --fix"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/zeitport/eslint-parser-json.git"
+        "url": "git+https://github.com/zeitport/eslint-plugin-json.git"
     },
     "private": true,
     "license": "MIT",
-    "homepage": "https://github.com/zeitport/eslint-parser-json#readme",
+    "homepage": "https://github.com/zeitport/eslint-plugin-json#readme",
     "devDependencies": {
-        "@zeitport/eslint-parser-json": "^1.0.1",
+        "@zeitport/eslint-plugin-json": "../latest/",
         "eslint": "^7.9.0",
         "eslint-plugin-sort-keys-fix": "^1.1.1",
         "@zeitport/eslint-plugin-json-test": "file:eslint-plugin-json-test"

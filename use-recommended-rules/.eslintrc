@@ -1,0 +1,11 @@
+{
+    "overrides": [{
+        "files": ["*.json"],
+        "parser": "@zeitport/eslint-plugin-json",
+        "extends": "plugin:@zeitport/eslint-plugin-json/recommended"
+    }],
+    "rules":{
+        "comma-dangle": ["error", "never"]
+    }
+}
+

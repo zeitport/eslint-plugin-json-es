@@ -2,11 +2,11 @@
 
 ## Installation
 
-We need eslint and @zeitport/eslint-parser-json to lint (or fix) our JSON file.
+We need eslint and @zeitport/eslint-plugin-json to lint (or fix) our JSON file.
 
 ```
 npm install eslint --save-dev
-npm install @zeitport/eslint-parser-json --save-dev
+npm install @zeitport/eslint-plugin-json --save-dev
 ```
 
 ## [JSON file]
@@ -36,11 +36,11 @@ The _.eslintrc_ configuration file uses [comma-dangle] rule that is provided by 
 {
     "overrides": [{
         "files": ["*.json"],
-        "parser": "@zeitport/eslint-parser-json"
-    }],
-    "rules":{
-        "comma-dangle": ["error", "never"]
-    }
+        "parser": "@zeitport/eslint-plugin-json",
+        "rules":{
+                "comma-dangle": ["error", "never"]
+            }
+    }]
 }
 ```
 
@@ -54,7 +54,7 @@ eslint planets.json
 ```
 
 ```cmd
-M:\github\zeitport\eslint-parser-json\example\get-started\planets.json
+M:\github\zeitport\eslint-plugin-json\example\get-started\planets.json
   5:27  error  Unexpected trailing comma  comma-dangle
   9:28  error  Unexpected trailing comma  comma-dangle
 
@@ -70,10 +70,26 @@ To fix the json file and remove the dangle commas run:
 eslint planets.json --fix
 ```
 
+## Recommended Rules
+
+This plugin provides a list of recommended rules to find common problems in JSON files. Use the "extends" config to get started.
+You are not limited to just the rules of the recommended config, you can still add your own rules.
+
+```json
+{
+    "overrides": [{
+        "files": ["*.json"],
+        "parser": "@zeitport/eslint-plugin-json",
+        "extends": "plugin:@zeitport/eslint-plugin-json/recommended"
+    }]
+}
+```
+
+
 # Resources
 [Configuring ESLint](https://eslint.org/docs/user-guide/configuring)
 
 
-[JSON file]: https://github.com/zeitport/eslint-parser-json/tree/example/get-started/planets.json
-[ESLint configuration file]: https://github.com/zeitport/eslint-parser-json/tree/example/get-started/.eslintrc
+[JSON file]: https://github.com/zeitport/eslint-plugin-json/tree/example/get-started/planets.json
+[ESLint configuration file]: https://github.com/zeitport/eslint-plugin-json/tree/example/get-started/.eslintrc
 [comma-dangle]: https://eslint.org/docs/rules/comma-dangle

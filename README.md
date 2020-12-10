@@ -1,4 +1,4 @@
-# Example usages of @zeitport/eslint-parser-json
+# Example usages of @zeitport/eslint-plugin-json
 
 
 | Example               | Description                                           |
@@ -7,5 +7,5 @@
 | [custom-json-rule]    | Creates a custom ESLint rule to lint JSON             |
 
 
-[get-started]: https://github.com/zeitport/eslint-parser-json/tree/example/get-started/
-[custom-json-rule]: https://github.com/zeitport/eslint-parser-json/tree/example/custom-json-rule/
+[get-started]: https://github.com/zeitport/eslint-plugin-json/tree/example/get-started/
+[custom-json-rule]: https://github.com/zeitport/eslint-plugin-json/tree/example/custom-json-rule/

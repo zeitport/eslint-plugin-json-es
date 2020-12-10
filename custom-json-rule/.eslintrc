@@ -4,10 +4,10 @@
     ],
     "overrides": [{
         "files": ["*.json"],
-        "parser": "@zeitport/eslint-parser-json"
-    }],
-    "rules": {
-        "@zeitport/json-test/no-underscore": ["error"]
-    }
+        "parser": "@zeitport/eslint-plugin-json",
+        "rules": {
+            "@zeitport/json-test/no-underscore": ["error"]
+        }
+    }]
 }
 

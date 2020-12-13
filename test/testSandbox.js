@@ -1,11 +1,20 @@
 const Linter = require('eslint').Linter;
 const {parseForESLint} = require('../index');
+const rules = require('../rules');
 
 const linter = new Linter();
 
 linter.defineParser('@zeitport/eslint-plugin-json', {
     parseForESLint
 });
+
+const scopedRules = {};
+
+Object.keys(rules).forEach(ruleId => {
+    scopedRules[`@zeitport/json/${ruleId}`] = rules[ruleId];
+});
+
+linter.defineRules(scopedRules);
 
 /**
  * @param {string} code

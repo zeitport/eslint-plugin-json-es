@@ -13,7 +13,8 @@
         "lib",
         "index.js",
         "LICENSE",
-        "config"
+        "config",
+        "rules"
     ],
     "repository": {
         "type": "git",

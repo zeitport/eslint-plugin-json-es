@@ -1,15 +1,15 @@
-const {linter} = require('../testSandbox');
+const {linter, verifyAndFix} = require('../../testSandbox');
 
 const config = {
     parser: '@zeitport/eslint-plugin-json',
     rules: {
-        'no-loss-of-precision': ['error']
+        'sort-keys': ['error']
     }
 };
 
 test('lint incorrect', () => {
     // Given
-    const code = `{"size": 1234567890123456789.0}`;
+    const code = `{"mars": "red", "earth": "blue"}`;
 
     // When
     const messages = linter.verify(code, config, {filename: 'test.json'});
@@ -17,14 +17,14 @@ test('lint incorrect', () => {
     // Then
     const expectedMessage = {
         severity: 2,
-        ruleId: 'no-loss-of-precision',
+        ruleId: 'sort-keys',
     };
     expect(messages[0]).toMatchObject(expectedMessage);
 });
 
 test('lint correct', () => {
     // Given
-    const code = `{"size": 12345}`;
+    const code = `{"earth": "blue", "mars": "red"}`;
 
     // When
     const messages = linter.verify(code, config, {filename: 'test.json'});

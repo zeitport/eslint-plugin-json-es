@@ -1,4 +1,4 @@
-const {linter, verifyAndFix} = require('../testSandbox');
+const {linter, verifyAndFix} = require('../../testSandbox');
 
 const config = {
     parser: '@zeitport/eslint-plugin-json',

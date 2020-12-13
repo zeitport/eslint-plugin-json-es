@@ -1,15 +1,15 @@
-const {linter, verifyAndFix} = require('../testSandbox');
+const {linter} = require('../../testSandbox');
 
 const config = {
     parser: '@zeitport/eslint-plugin-json',
     rules: {
-        'quote-props': ['error', 'always']
+        'no-undefined': ['error']
     }
 };
 
 test('lint incorrect', () => {
     // Given
-    const code = `{mars: "red"}`;
+    const code = `{"mars": undefined}`;
 
     // When
     const messages = linter.verify(code, config, {filename: 'test.json'});
@@ -17,13 +17,7 @@ test('lint incorrect', () => {
     // Then
     const expectedMessage = {
         severity: 2,
-        ruleId: 'quote-props'
+        ruleId: 'no-undefined',
     };
     expect(messages[0]).toMatchObject(expectedMessage);
-});
-
-test('fix 1 (simple)', () => {
-    const input = `{planet: "mars"}`;
-    const fixed = `{"planet": "mars"}`;
-    expect(verifyAndFix(input, config)).toEqual(fixed);
 });

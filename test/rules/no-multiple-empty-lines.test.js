@@ -7,7 +7,7 @@ const config = {
     }
 };
 
-test('lint incorrect', expect => {
+test('lint incorrect', () => {
     // Given
     const code = `{"mars": "red"}\n\n\n`;
 
@@ -19,10 +19,10 @@ test('lint incorrect', expect => {
         severity: 2,
         ruleId: 'no-multiple-empty-lines',
     };
-    expect.like(messages[0], expectedMessage);
+    expect(messages[0]).toMatchObject(expectedMessage);
 });
 
-test('lint correct', expect => {
+test('lint correct', () => {
     // Given
     const code = `{"mars": "red"}\n\n`;
 
@@ -30,12 +30,12 @@ test('lint correct', expect => {
     const messages = linter.verify(code, config, {filename: 'test.json'});
 
     // Then
-    expect.falsy(messages.length);
+    expect(messages.length).toBe(0);
 });
 
-test('fix 1 (simple)', expect => {
+test('fix 1 (simple)', () => {
     const input = `{"mars": "red"}\n\n\n`;
     const fixed = `{"mars": "red"}\n\n`;
-    expect.deepEqual(verifyAndFix(input, config), fixed);
+    expect(verifyAndFix(input, config)).toEqual(fixed);
 });
 

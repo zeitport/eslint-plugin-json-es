@@ -7,7 +7,7 @@ const config = {
     }
 };
 
-test('lint incorrect', expect => {
+test('lint incorrect', () => {
     // Given
     const code = `{'mars': 'red'}`;
 
@@ -19,41 +19,41 @@ test('lint incorrect', expect => {
         severity: 2,
         ruleId: 'quotes'
     };
-    expect.like(messages[0], expectedMessage);
+    expect(messages[0]).toMatchObject(expectedMessage);
 });
 
-test('fix 1 (simple)', expect => {
+test('fix 1 (simple)', () => {
     const input = `{'planet': "mars"}`;
     const fixed = `{"planet": "mars"}`;
-    expect.deepEqual(verifyAndFix(input, config), fixed);
+    expect(verifyAndFix(input, config)).toEqual(fixed);
 });
 
-test('fix 2 (new-lines)', expect => {
+test('fix 2 (new-lines)', () => {
     const input = `{\n    'planet': "mars"\n}`;
     const fixed = `{\n    "planet": "mars"\n}`;
-    expect.deepEqual(verifyAndFix(input, config), fixed);
+    expect(verifyAndFix(input, config)).toEqual(fixed);
 });
 
-test('fix 3 (spaces', expect => {
+test('fix 3 (spaces', () => {
     const input = `  {  \n  'planet'  :  "mars"  \n  }  `;
     const fixed = `  {  \n  "planet"  :  "mars"  \n  }  `;
-    expect.deepEqual(verifyAndFix(input, config), fixed);
+    expect(verifyAndFix(input, config)).toEqual(fixed);
 });
 
-test('fix 4 (array)', expect => {
+test('fix 4 (array)', () => {
     const input = `{\n    'planets': ['mars']\n}`;
     const fixed = `{\n    "planets": ["mars"]\n}`;
-    expect.deepEqual(verifyAndFix(input, config), fixed);
+    expect(verifyAndFix(input, config)).toEqual(fixed);
 });
 
-test('fix 5 (nested)', expect => {
+test('fix 5 (nested)', () => {
     const input = `{'planet': {'name': 'mars', 'color':'red'}}`;
     const fixed = `{"planet": {"name": "mars", "color":"red"}}`;
-    expect.deepEqual(verifyAndFix(input, config), fixed);
+    expect(verifyAndFix(input, config)).toEqual(fixed);
 });
 
-test('fix 6 (noop)', expect => {
+test('fix 6 (noop)', () => {
     const input = `{"planet": "mars"}`;
     const fixed = `{"planet": "mars"}`;
-    expect.deepEqual(verifyAndFix(input, config), fixed);
+    expect(verifyAndFix(input, config)).toEqual(fixed);
 });

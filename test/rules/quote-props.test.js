@@ -7,7 +7,7 @@ const config = {
     }
 };
 
-test('lint incorrect', expect => {
+test('lint incorrect', () => {
     // Given
     const code = `{mars: "red"}`;
 
@@ -19,11 +19,11 @@ test('lint incorrect', expect => {
         severity: 2,
         ruleId: 'quote-props'
     };
-    expect.like(messages[0], expectedMessage);
+    expect(messages[0]).toMatchObject(expectedMessage);
 });
 
-test('fix 1 (simple)', expect => {
+test('fix 1 (simple)', () => {
     const input = `{planet: "mars"}`;
     const fixed = `{"planet": "mars"}`;
-    expect.deepEqual(verifyAndFix(input, config), fixed);
+    expect(verifyAndFix(input, config)).toEqual(fixed);
 });

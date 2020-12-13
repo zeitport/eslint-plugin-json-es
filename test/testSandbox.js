@@ -1,4 +1,3 @@
-const test = require('ava');
 const Linter = require('eslint').Linter;
 const {parseForESLint} = require('../index');
 
@@ -21,6 +20,5 @@ function verifyAndFix(code, config) {
 
 module.exports = {
     linter,
-    test,
     verifyAndFix
 }

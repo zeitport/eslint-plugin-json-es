@@ -7,7 +7,7 @@ const config = {
     }
 };
 
-test('lint incorrect', expect => {
+test('lint incorrect', () => {
     // Given
     const code = `{"mars": undefined}`;
 
@@ -19,5 +19,5 @@ test('lint incorrect', expect => {
         severity: 2,
         ruleId: 'no-undefined',
     };
-    expect.like(messages[0], expectedMessage);
+    expect(messages[0]).toMatchObject(expectedMessage);
 });

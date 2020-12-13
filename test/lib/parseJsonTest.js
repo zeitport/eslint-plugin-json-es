@@ -13,7 +13,7 @@ const parserOptions = {
     filePath: 'test.json'
 }
 
-test('parseJson returns AST', expect => {
+test('parseJson returns AST', () => {
     // Given
     const code = createJson();
 

@@ -7,7 +7,7 @@ const config = {
     }
 };
 
-test('lint incorrect', expect => {
+test('lint incorrect', () => {
     // Given
     const code = `{"size": 1234567890123456789.0}`;
 
@@ -19,10 +19,10 @@ test('lint incorrect', expect => {
         severity: 2,
         ruleId: 'no-loss-of-precision',
     };
-    expect.like(messages[0], expectedMessage);
+    expect(messages[0]).toMatchObject(expectedMessage);
 });
 
-test('lint correct', expect => {
+test('lint correct', () => {
     // Given
     const code = `{"size": 12345}`;
 
@@ -30,5 +30,5 @@ test('lint correct', expect => {
     const messages = linter.verify(code, config, {filename: 'test.json'});
 
     // Then
-    expect.falsy(messages.length);
+    expect(messages.length).toBe(0);
 });

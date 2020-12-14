@@ -1,4 +1,3 @@
-const {test} = require('../testSandbox');
 const {parseJson} = require('../../lib/parseJson');
 
 const parserOptions = {
@@ -21,7 +20,7 @@ test('parseJson returns AST', () => {
     const parseObject = parseJson(code, parserOptions);
 
     // Then
-    expect.truthy(parseObject.ast);
+    expect(parseObject.ast).toBeTruthy();
 });
 
 /**

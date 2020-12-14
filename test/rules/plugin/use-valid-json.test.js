@@ -28,3 +28,24 @@ test('lint incorrect JSON', () => {
     expect(messages.length).toBe(1);
     expect(messages[0]).toMatchObject(expectedMessage);
 });
+
+
+test('lint incorrect JSON shall return JSON.parse() error message', () => {
+    // Given
+    const code = `{`;
+
+    // When
+    const messages = linter.verify(code, config, {filename: 'test.json'});
+
+    // Then
+    const expectedMessage = {
+        severity: 2,
+        ruleId: null,
+        line: 1,
+        column: 3,
+        message: 'Parsing error: Unexpected end of JSON input'
+    };
+
+    expect(messages.length).toBe(1);
+    expect(messages[0]).toMatchObject(expectedMessage);
+});

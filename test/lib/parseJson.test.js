@@ -23,6 +23,17 @@ test('parseJson returns AST', () => {
     expect(parseObject.ast).toBeTruthy();
 });
 
+test('parseJson with invalid code throws error', () => {
+    // Given
+    const code = `{`;
+
+    // When
+    const parse = () => parseJson(code, parserOptions);
+
+    // Then
+    expect(parse).toThrow('Unexpected end of JSON input');
+});
+
 /**
  * @returns {string}
  */

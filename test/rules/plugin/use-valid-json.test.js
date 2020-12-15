@@ -49,3 +49,23 @@ test('lint incorrect JSON shall return JSON.parse() error message', () => {
     expect(messages.length).toBe(1);
     expect(messages[0]).toMatchObject(expectedMessage);
 });
+
+test('lint incorrect JSON shall return JSON.parse() error message', () => {
+    // Given
+    const code = `{"a":3})(`;
+
+    // When
+    const messages = linter.verify(code, config, {filename: 'test.json'});
+
+    // Then
+    const expectedMessage = {
+        severity: 2,
+        ruleId: '@zeitport/json/use-valid-json',
+        line: 0,
+        column: 1,
+        message: 'Unexpected token ) in JSON at position 7'
+    };
+
+    expect(messages.length).toBe(1);
+    expect(messages[0]).toMatchObject(expectedMessage);
+});

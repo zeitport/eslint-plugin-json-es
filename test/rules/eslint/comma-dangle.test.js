@@ -1,7 +1,7 @@
 const {linter, verifyAndFix} = require('../../testSandbox');
 
 const config = {
-    parser: '@zeitport/eslint-plugin-json',
+    parser: 'eslint-plugin-json-es',
     rules: {
         'comma-dangle': ['error', 'never']
     }

@@ -1,4 +1,4 @@
-# `@zeitport/eslint-plugin-json` vs `eslint-plugin-json`
+# `eslint-plugin-json-es` vs `eslint-plugin-json`
 
 The [eslint-plugin-json] can lint JSON files.
 
@@ -6,7 +6,7 @@ The [eslint-plugin-json] can lint JSON files.
 
 ### Engine
 
-**@zeitport/eslint-plugin-json**
+**eslint-plugin-json-es**
 > Uses the [ESLint] parser [espree] with tiny modifications (3 characters difference)
 
 **eslint-plugin-json**
@@ -14,7 +14,7 @@ The [eslint-plugin-json] can lint JSON files.
 
 ### Fix
 
-**@zeitport/eslint-plugin-json**
+**eslint-plugin-json-es**
 > YES!
 > For example you can sort the keys when using [eslint-plugin-sort-keys-fix]
 
@@ -23,7 +23,7 @@ The [eslint-plugin-json] can lint JSON files.
 
 ### Rules Configuration
 
-**@zeitport/eslint-plugin-json**
+**eslint-plugin-json-es**
 > Rules can be configured.
 > You can use the built-in [ESLint] rules.
 > You can write your own rules or use rules from other [ESLint] plugins.

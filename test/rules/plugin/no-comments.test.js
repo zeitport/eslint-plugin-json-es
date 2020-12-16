@@ -1,9 +1,9 @@
 const {linter, verifyAndFix} = require('../../testSandbox');
 
 const config = {
-    parser: '@zeitport/eslint-plugin-json',
+    parser: 'eslint-plugin-json-es',
     rules: {
-        '@zeitport/json/no-comments': ['error']
+        'json-es/no-comments': ['error']
     }
 };
 
@@ -20,7 +20,7 @@ test('lint incorrect block comment', () => {
     // Then
     const expectedMessage = {
         severity: 2,
-        ruleId: '@zeitport/json/no-comments',
+        ruleId: 'json-es/no-comments',
     };
 
     expect(messages.length).toBe(1);
@@ -39,7 +39,7 @@ test('lint incorrect line comment', () => {
     // Then
     const expectedMessage = {
         severity: 2,
-        ruleId: '@zeitport/json/no-comments',
+        ruleId: 'json-es/no-comments',
     };
 
     expect(messages.length).toBe(1);

@@ -1,5 +1,5 @@
 {
-    "name": "@zeitport/eslint-plugin-json",
+    "name": "eslint-plugin-json-es",
     "version": "1.3.0",
     "description": "A JSON parser for ESLint.",
     "main": "index.js",

@@ -4,14 +4,14 @@ const rules = require('../rules');
 
 const linter = new Linter();
 
-linter.defineParser('@zeitport/eslint-plugin-json', {
+linter.defineParser('eslint-plugin-json-es', {
     parseForESLint
 });
 
 const scopedRules = {};
 
 Object.keys(rules).forEach(ruleId => {
-    scopedRules[`@zeitport/json/${ruleId}`] = rules[ruleId];
+    scopedRules[`json-es/${ruleId}`] = rules[ruleId];
 });
 
 linter.defineRules(scopedRules);

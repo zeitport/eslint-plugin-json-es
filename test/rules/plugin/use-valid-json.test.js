@@ -1,9 +1,9 @@
 const {linter, verifyAndFix} = require('../../testSandbox');
 
 const config = {
-    parser: '@zeitport/eslint-plugin-json',
+    parser: 'eslint-plugin-json-es',
     rules: {
-        '@zeitport/json/use-valid-json': ['error']
+        'json-es/use-valid-json': ['error']
     }
 };
 
@@ -20,7 +20,7 @@ test('lint incorrect JSON', () => {
     // Then
     const expectedMessage = {
         severity: 2,
-        ruleId: '@zeitport/json/use-valid-json',
+        ruleId: 'json-es/use-valid-json',
         line: 3,
         column: 17
     };
@@ -60,7 +60,7 @@ test('lint incorrect JSON shall return JSON.parse() error message', () => {
     // Then
     const expectedMessage = {
         severity: 2,
-        ruleId: '@zeitport/json/use-valid-json',
+        ruleId: 'json-es/use-valid-json',
         line: 0,
         column: 1,
         message: 'Unexpected token ) in JSON at position 7'

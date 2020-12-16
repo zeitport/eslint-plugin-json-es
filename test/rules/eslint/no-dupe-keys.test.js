@@ -1,7 +1,7 @@
 const {linter} = require('../../testSandbox');
 
 const config = {
-    parser: '@zeitport/eslint-plugin-json',
+    parser: 'eslint-plugin-json-es',
     rules: {
         'no-dupe-keys': ['error']
     }

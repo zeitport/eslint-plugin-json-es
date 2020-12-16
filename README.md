@@ -1,4 +1,4 @@
-# Example usages of @zeitport/eslint-plugin-json
+# Example usages of eslint-plugin-json-es
 
 
 | Example               | Description                                           |

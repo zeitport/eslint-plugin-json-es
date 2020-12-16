@@ -2,11 +2,11 @@
 
 ## Installation
 
-We need eslint and @zeitport/eslint-plugin-json to lint (or fix) our JSON file.
+We need eslint and eslint-plugin-json-es to lint (or fix) our JSON file.
 
 ```
 npm install eslint --save-dev
-npm install @zeitport/eslint-plugin-json --save-dev
+npm install eslint-plugin-json-es --save-dev
 ```
 
 ## [JSON file]
@@ -36,7 +36,7 @@ The _.eslintrc_ configuration file uses [comma-dangle] rule that is provided by 
 {
     "overrides": [{
         "files": ["*.json"],
-        "parser": "@zeitport/eslint-plugin-json",
+        "parser": "eslint-plugin-json-es",
         "rules":{
                 "comma-dangle": ["error", "never"]
             }
@@ -79,8 +79,8 @@ You are not limited to just the rules of the recommended config, you can still a
 {
     "overrides": [{
         "files": ["*.json"],
-        "parser": "@zeitport/eslint-plugin-json",
-        "extends": "plugin:@zeitport/eslint-plugin-json/recommended"
+        "parser": "eslint-plugin-json-es",
+        "extends": "plugin:eslint-plugin-json-es/recommended"
     }]
 }
 ```

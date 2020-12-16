@@ -1,12 +1,12 @@
 {
     "plugins": [
-        "@zeitport/eslint-plugin-json-test"
+        "eslint-plugin-json-es-test"
     ],
     "overrides": [{
         "files": ["*.json"],
-        "parser": "@zeitport/eslint-plugin-json",
+        "parser": "eslint-plugin-json-es",
         "rules": {
-            "@zeitport/json-test/no-underscore": ["error"]
+            "json-es-test/no-underscore": ["error"]
         }
     }]
 }

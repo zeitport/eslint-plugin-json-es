@@ -24,11 +24,11 @@ We do not want that any property key of our JSON to start with an underscore (`_
 ## Creating the plugin
 
 Before we create the rule we need to setup a plugin package. ESLint requires that the package starts with `eslint-plugin`. Using an package scope is optional.
-We create a folder with a package.json and call our plugin `@zeitport/eslint-plugin-json-test`.
+We create a folder with a package.json and call our plugin `eslint-plugin-json-es-test`.
 
 ```
 {
-    "name": "@zeitport/eslint-plugin-json-test",
+    "name": "eslint-plugin-json-es-test",
     "version": "1.0.0",
     "main": "index.js"
 }
@@ -57,11 +57,11 @@ Checkout the rule implementation at [/eslint-plugins-json-test/no-underscore.js]
 
 ## Installation
 
-No we need to install the runtime (ESLint), the JSON parser (@zeitport/eslint-plugin-json) and our ESLint plugin.
+No we need to install the runtime (ESLint), the JSON parser (eslint-plugin-json-es) and our ESLint plugin.
 
 ```
 npm install eslint --save-dev
-npm install @zeitport/eslint-plugin-json --save-dev
+npm install eslint-plugin-json-es --save-dev
 ```
 
 In our use case the `eslint-plugin` is located in a sub folder.
@@ -96,11 +96,11 @@ The _.eslintrc_ configuration file uses our custom [no-underscore] rule that is 
 ```json
 {
     "plugins": [
-        "@zeitport/eslint-plugin-json-test"
+        "eslint-plugin-json-es-test"
     ],
     "overrides": [{
         "files": ["*.json"],
-        "parser": "@zeitport/eslint-plugin-json"
+        "parser": "eslint-plugin-json-es"
     }],
     "rules": {
         "@zeitport/json-test/no-underscore": ["error"]

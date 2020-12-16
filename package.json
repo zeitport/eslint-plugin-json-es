@@ -23,6 +23,7 @@
     "keywords": [
         "eslint",
         "eslint-parser",
+        "eslint-plugin",
         "JSON",
         "parser"
     ],

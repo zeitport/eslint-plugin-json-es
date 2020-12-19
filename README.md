@@ -41,15 +41,18 @@ See the [example branch] for a small complete example with one JSON file and an 
 ### Recommended
 [./config/recommended.js](./config/recommended.js)
 
-| Auto-fix | Rule                   |
-|----------|------------------------|
-|🔧| comma-dangle                    |
-| | no-dupe-keys                    |
-| | no-irregular-whitespace         |
-| | no-loss-of-precision            |
-| | no-undefined                    |
-|🔧| quotes                          |
-|🔧| quote-props                     |
+| Auto-fix | Rule                   | Version       |
+|----------|----------------------------| ----------|
+|🔧| comma-dangle                        | > 1.3.0   |
+| | no-dupe-keys                        | > 1.3.0   |
+|🔧| no-extra-parens                     | > 1.4.0 ⭐ |
+| | no-irregular-whitespace             | > 1.3.0   |
+| | no-loss-of-precision                | > 1.3.0   |
+| | no-undefined                        | > 1.3.0   |
+|🔧| quotes                              | > 1.3.0   |
+|🔧| quote-props                         | > 1.3.0   |
+
+⭐ Latest change to the recommended rules configuration
 
 ### Readable
 Based on the recommended rules with stylistic aspects.

@@ -1,4 +1,4 @@
-[![NPM version](https://img.shields.io/npm/v/eslint-plugin-json-es.svg)](https://img.shields.io/npm/v/eslint-plugin-json-es)
+[![NPM version](https://img.shields.io/npm/v/eslint-plugin-json-es.svg)](https://www.npmjs.com/package/eslint-plugin-json-es)
 [![CI status](https://github.com/zeitport/eslint-plugin-json/workflows/CI/badge.svg?branch=master&event=push)](https://github.com/zeitport/eslint-plugin-json/actions?query=workflow%3ACI)
 
 # eslint-plugin-json-es
@@ -33,8 +33,26 @@ Or use the `overrides` [ESLint] configuration to use the JSON parser only for `.
 }
 ```
 
-## Example
-See the [example branch] for a small complete example with one JSON file and an [ESLint] configuration.
+## Examples
+See the [example branch] for different use cases and [ESLint] configuration.
+
+## Alternative JSON Plugins
+
+There are three different ways how to add JSON linting to [ESLint].
+Select the package that fits your needs:
+
+|                           | [eslint-plugin-json-es](https://www.npmjs.com/package/eslint-plugin-json-es) | [eslint-plugin-json](https://www.npmjs.com/package/eslint-plugin-json) | [eslint-plugin-jsonc](https://www.npmjs.com/package/eslint-plugin-jsonc)       |
+| ---                       | ----------------------------- | ------------------------- | ------------------------- |
+| Version                   | ![NPM version](https://img.shields.io/npm/v/eslint-plugin-json-es.svg) | ![NPM version](https://img.shields.io/npm/v/eslint-plugin-json.svg) | ![NPM version](https://img.shields.io/npm/v/eslint-plugin-jsonc.svg)         |
+| Engine                    | ESLint espree parser          | VSCode JSON Validation    | Custom AST parser         |
+| ESLint version            | >7.0.0                        | ?                         | >6.0.0                    |
+| Custom rules              | ✔                             | ❌                        | ✔ (1)                     |
+| Use existing ESLint rules | ✔ (2)                         | ❌                        | ❌                         |
+| Fix Code                  | ✔                             | ❌                        | ✔ (partly)                |
+| Rule compare guide        | -                             | [Compare](docs/compare-eslint-plugin-json.md) | #TODO :-(    |
+
+_(1) Uses custom AST node types_<br>
+_(2) Not every ESLint rule makes sense for JSON_<br>
 
 ## Rules Configurations
 
@@ -64,25 +82,6 @@ Based on the recommended rules with stylistic aspects.
 |🔧| indent | 4 |
 |🔧| no-multiple-empty-lines | |
 | | sort-keys |Alternative with fix [eslint-plugin-sort-keys-fix] |
-
-## Alternative JSON plugins/parsers
-
-Here are already some ESLint plugins to lint JSON.
-
-- [eslint-plugin-json](https://www.npmjs.com/package/eslint-plugin-json)
-- [eslint-plugin-jsonc](https://www.npmjs.com/package/eslint-plugin-jsonc)
-
-|                           | eslint-plugin-json-es         | eslint-plugin-json        | eslint-plugin-jsonc       |
-| ---                       | ----------------------------- | ------------------------- | ------------------------- |
-| Engine                    | Uses ESLint's espree parser   | Custom parser             | Custom AST parser         |
-| Custom rules              | ✔                             | ❌                        | ✔                         |
-| Use existing ESLint rules | ✔ (only JSON compatible ones) | ❌                        | ❌                         |
-| Special JSON rules        | ❌ (planned)                   | ✔                        | ✔                         |
-| ESLint version            | >7.0.0                        | ?                         | >6.0.0                    |
-
-
-Deep compare guides:
-- [Compare eslint-plugin-json-es with eslint-plugin-json](docs/compare-eslint-plugin-json.md);
 
 [ESLint]: https://eslint.org/
 [custom parser]: https://eslint.org/docs/developer-guide/working-with-custom-parsers

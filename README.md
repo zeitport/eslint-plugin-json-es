@@ -3,38 +3,33 @@
 
 # eslint-plugin-json-es
 
-A JSON parser for [ESLint] that works with existing ESLint rules or your custom rules.
+A JSON parser for [ESLint] that works with a lot of existing ESLint rules or your custom rules.
 
 ## Installation
 
 ```
-npm install eslint-plugin-json-es
+npm install eslint-plugin-json-es --save-dev
 ```
 
-## Configuration and Usage
+## Configure ESLint
 
-[ESLint] configuration
-```
-{
-    "parser": "eslint-plugin-json-es",
-    "rules": {
-    }
-}
-```
-
-Or use the `overrides` [ESLint] configuration to use the JSON parser only for `.json` files.
+This is an example [ESLint] configuration for all *.json files.
+It _extends_ the recommended rules for JSON.
 
 ```
 {
     "overrides": [{
         "files": ["*.json"],
-        "parser": "eslint-plugin-json-es"
+        "parser": "eslint-plugin-json-es",
+        "extends": "plugin:eslint-plugin-json-es/recommended"
+        "rules": {
+        }
     }]
 }
 ```
 
 ## Examples
-See the [example branch] for different use cases and [ESLint] configuration.
+See the [example branch] for different use cases and [ESLint] configurations.
 
 ## Alternative JSON Plugins
 

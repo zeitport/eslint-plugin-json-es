@@ -23,6 +23,17 @@ test('parseJson returns AST', () => {
     expect(parseObject.ast).toBeTruthy();
 });
 
+test('parseJson with a string', () => {
+    // Given
+    const code = '\n"validJSON"\n';
+
+    // When
+    const parseObject = parseJson(code, parserOptions);
+
+    // Then
+    expect(parseObject.ast).toBeTruthy();
+});
+
 test('parseJson fixes token locations', () => {
     // Given
     const code = createJson();

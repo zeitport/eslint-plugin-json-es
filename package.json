@@ -1,6 +1,6 @@
 {
     "name": "eslint-plugin-json-es",
-    "version": "1.5.1",
+    "version": "1.5.2",
     "description": "A JSON parser for ESLint.",
     "main": "index.js",
     "scripts": {

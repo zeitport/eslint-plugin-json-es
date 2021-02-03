@@ -16,7 +16,7 @@ npm install eslint-plugin-json-es --save-dev
 This is an example [ESLint] configuration for all *.json files.
 It _extends_ the recommended rules for JSON.
 
-```
+```json
 {
     "overrides": [{
         "files": ["*.json"],

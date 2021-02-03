@@ -21,7 +21,7 @@ It _extends_ the recommended rules for JSON.
     "overrides": [{
         "files": ["*.json"],
         "parser": "eslint-plugin-json-es",
-        "extends": "plugin:eslint-plugin-json-es/recommended"
+        "extends": "plugin:eslint-plugin-json-es/recommended",
         "rules": {
         }
     }]

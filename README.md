@@ -58,14 +58,12 @@ _(2) Not every ESLint rule makes sense for JSON_<br>
 |----------|----------------------------| ----------|
 |🔧| comma-dangle                        | > 1.3.0   |
 | | no-dupe-keys                        | > 1.3.0   |
-|🔧| no-extra-parens                     | > 1.4.0 ⭐ |
+|🔧| no-extra-parens                     | > 1.4.0  |
 | | no-irregular-whitespace             | > 1.3.0   |
 | | no-loss-of-precision                | > 1.3.0   |
 | | no-undefined                        | > 1.3.0   |
 |🔧| quotes                              | > 1.3.0   |
 |🔧| quote-props                         | > 1.3.0   |
-
-⭐ Latest change to the recommended rules configuration
 
 ### Readable
 Based on the recommended rules with stylistic aspects.

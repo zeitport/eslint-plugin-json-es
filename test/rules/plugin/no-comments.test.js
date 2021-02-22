@@ -7,6 +7,19 @@ const config = {
     }
 };
 
+test('lint JSON without a comment', () => {
+    // Given
+    const code = `{
+        "mars": "red"
+    }`;
+
+    // When
+    const messages = linter.verify(code, config, {filename: 'test.json'});
+
+    // Then
+    expect(messages.length).toBe(0);
+});
+
 test('lint incorrect block comment', () => {
     // Given
     const code = `{

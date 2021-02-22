@@ -16,14 +16,14 @@ module.exports = {
         schema: []
     },
     create: function(context) {
-        const comments = context.getAllComments();
-        if (comments) {
-            for (const comment of comments) {
-                context.report({
-                    loc: comment.loc,
-                    message: 'This comment is not allowed.'
-                });
-            }
+        const sourceCOde = context.getSourceCode()
+        const comments = sourceCOde.getAllComments();
+
+        for (const comment of comments) {
+            context.report({
+                loc: comment.loc,
+                message: 'This comment is not allowed.'
+            });
         }
 
         return {};

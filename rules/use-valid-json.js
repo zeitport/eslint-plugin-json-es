@@ -33,12 +33,12 @@ module.exports = {
                         let column = 0;
 
                         for(let i = 0; i < sourceCode.lineStartIndices.length; i++) {
-                            const index = sourceCode.lineStartIndices[i];
+                            const startIndex = sourceCode.lineStartIndices[i];
+                            const endIndex = sourceCode.lineStartIndices[i + 1] || Number.POSITIVE_INFINITY;
 
-                            if (position < index) {
-                                const previousIndex = sourceCode.lineStartIndices[i - 1];
-                                line = i;
-                                column = position - previousIndex;
+                            if (position >= startIndex && position < endIndex) {
+                                line = i + 1;
+                                column = position - startIndex;
                                 break;
                             }
                         }

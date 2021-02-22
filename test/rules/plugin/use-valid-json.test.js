@@ -61,9 +61,29 @@ test('lint incorrect JSON shall return JSON.parse() error message', () => {
     const expectedMessage = {
         severity: 2,
         ruleId: 'json-es/use-valid-json',
-        line: 0,
-        column: 1,
+        line: 1,
+        column: 8,
         message: 'Unexpected token ) in JSON at position 7'
+    };
+
+    expect(messages.length).toBe(1);
+    expect(messages[0]).toMatchObject(expectedMessage);
+});
+
+test('lint incorrect JSON shall return JSON.parse() error message for line 2', () => {
+    // Given
+    const code = `{"a": 100, \n    "b": 100. }`;
+
+    // When
+    const messages = linter.verify(code, config, {filename: 'test.json'});
+
+    // Then
+    const expectedMessage = {
+        severity: 2,
+        ruleId: 'json-es/use-valid-json',
+        line: 2,
+        column: 14,
+        message: 'Unexpected token   in JSON at position 25'
     };
 
     expect(messages.length).toBe(1);

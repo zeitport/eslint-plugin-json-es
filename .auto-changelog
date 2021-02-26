@@ -3,5 +3,5 @@
     "package": true,
     "unreleased": true,
     "commitLimit": false,
-    "ignoreCommitPattern": "[README.md]|[Bump]"
+    "ignoreCommitPattern": "(?:README)|(?:Bump)|(?:Build)"
 }

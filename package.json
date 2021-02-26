@@ -7,7 +7,7 @@
         "lint": "eslint lib",
         "test": "jest",
         "prepublish": "npm test",
-        "changelog": "auto-changelog"
+        "changelog": "auto-changelog --starting-version=v1.5.3"
     },
     "files": [
         "README.md",

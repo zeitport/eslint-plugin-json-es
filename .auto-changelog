@@ -1,0 +1,8 @@
+{
+    "output": "CHANGELOG.md",
+    "package": true,
+    "unreleased": true,
+    "commitLimit": false,
+    "startingVersion": "v1.5.0",
+    "ignoreCommitPattern": "[README.md]|[Bump]"
+}

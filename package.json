@@ -6,7 +6,7 @@
     "scripts": {
         "lint": "eslint lib",
         "test": "jest",
-        "prepublish": "npm test",
+        "prepublishOnly": "npm test",
         "changelog": "auto-changelog"
     },
     "files": [

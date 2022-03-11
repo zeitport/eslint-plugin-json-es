@@ -1,4 +1,5 @@
-const {parseJson} = require('../../lib/parseJson');
+import {expect, test} from 'vitest'
+import {parseJson} from '../../lib/parseJson.js';
 
 const parserOptions = {
     ecmaVersion: undefined,
@@ -20,7 +21,7 @@ test('parseJson returns AST', () => {
     const parseObject = parseJson(code, parserOptions);
 
     // Then
-    expect(parseObject.ast).toBeTruthy();
+    expect(typeof parseObject.ast).to.equal('object');
 });
 
 test('parseJson with a string', () => {

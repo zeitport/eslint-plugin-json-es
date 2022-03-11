@@ -1,4 +1,5 @@
-const {linter, verifyAndFix} = require('../../testSandbox');
+import {expect, test} from 'vitest'
+import {linter} from '../../testSandbox.js';
 
 const config = {
     parser: 'eslint-plugin-json-es',

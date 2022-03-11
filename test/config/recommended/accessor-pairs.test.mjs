@@ -1,5 +1,6 @@
-const {linter} = require('../../testSandbox');
-const {rules} = require('../../../config/recommended');
+import {expect, test} from 'vitest'
+import {linter} from '../../testSandbox';
+import {rules} from '../../../config/recommended';
 
 const config = {
     parser: 'eslint-plugin-json-es',
@@ -21,3 +22,6 @@ test('lint correct', () => {
     // Then
     expect(messages.length).toEqual(0);
 });
+
+
+

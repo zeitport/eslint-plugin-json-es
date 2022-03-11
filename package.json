@@ -5,7 +5,9 @@
     "main": "index.js",
     "scripts": {
         "lint": "eslint lib",
-        "test": "jest",
+        "coverage": "c8 --check-coverage --lines 100 npm test",
+        "test": "vitest run",
+        "testui": "vitest --ui",
         "prepublishOnly": "npm test",
         "patch": "npm version patch && auto-changelog",
         "changelog": "auto-changelog"
@@ -43,9 +45,11 @@
         "eslint": ">= 7"
     },
     "devDependencies": {
+        "@vitest/ui": "^0.6.0",
         "auto-changelog": "^2.4.0",
+        "c8": "^7.11.0",
         "eslint": "^8.10.0",
-        "jest": "^27.5.1"
+        "vitest": "^0.6.0"
     },
     "contributingGuide": {
         "commitTags": {

@@ -1,4 +1,5 @@
-const {linter, verifyAndFix} = require('../../testSandbox');
+import {expect, test} from 'vitest'
+import {linter, verifyAndFix} from '../../testSandbox.js';
 
 /**
  * In JavaScript property values can be wrapped in parens.

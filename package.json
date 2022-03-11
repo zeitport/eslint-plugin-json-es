@@ -35,16 +35,16 @@
     },
     "homepage": "https://github.com/zeitport/eslint-plugin-json-es#readme",
     "dependencies": {
-        "eslint-visitor-keys": "^3.0.0",
-        "espree": "^9.0.0"
+        "eslint-visitor-keys": "^3.3.0",
+        "espree": "^9.3.1"
     },
     "peerDependencies": {
         "eslint": ">= 7"
     },
     "devDependencies": {
-        "auto-changelog": "^2.2.1",
-        "eslint": "^8.0.0",
-        "jest": "^27.3.1"
+        "auto-changelog": "^2.4.0",
+        "eslint": "^8.10.0",
+        "jest": "^27.5.1"
     },
     "contributingGuide": {
         "commitTags": {

@@ -2,6 +2,8 @@
 [![CI status](https://github.com/zeitport/eslint-plugin-json/workflows/CI/badge.svg?branch=main&event=push)](https://github.com/zeitport/eslint-plugin-json/actions?query=workflow%3ACI)
 [![CodeQL](https://github.com/zeitport/eslint-plugin-json-es/workflows/CodeQL/badge.svg)](https://github.com/zeitport/eslint-plugin-json/actions?query=workflow%3ACodeQL)
 [![Downloads](https://img.shields.io/npm/dm/eslint-plugin-json-es.svg)](https://www.npmjs.com/package/eslint-plugin-json-es)
+![NPM](https://img.shields.io/npm/l/eslint-plugin-json-es)
+![npms.io (quality)](https://img.shields.io/npms-io/quality-score/eslint-plugin-json-es)
 
 # eslint-plugin-json-es
 

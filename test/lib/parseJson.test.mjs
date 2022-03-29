@@ -47,6 +47,35 @@ test('parseJson fixes token locations', () => {
     expect(tokenSummary).toMatchObject(getExpectedTokenSummary());
 });
 
+test('parseJson fixes comment locations', () => {
+    // Given
+    const code = `{\n  // comment\n  "name": "mars"\n}`;
+
+    // When
+    const parseObject = parseJson(code, parserOptions);
+    const comment = parseObject.ast.comments[0];
+
+    // Then
+    const expectedCommentNode = {
+        start: 4,
+        end: 14
+    };
+    expect(comment).toMatchObject(expectedCommentNode);
+});
+
+test('parseJson does not fix comments when ast does not parse comments', () => {
+    // Given
+    const customOptions = {...parserOptions};
+    customOptions.comment = false;
+    const code = `{\n  // comment\n  "name": "mars"\n}`;
+
+    // When
+    const parseObject = parseJson(code, customOptions);
+
+    // Then
+    expect(parseObject.ast.comments).to.equal(undefined);
+});
+
 test('parseJson with invalid code throws error', () => {
     // Given
     const code = `{`;

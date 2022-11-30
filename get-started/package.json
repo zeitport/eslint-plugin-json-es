@@ -4,8 +4,8 @@
     "description": "Example usage of ESLint with eslint-plugin-json-es",
     "main": "index.js",
     "scripts": {
-        "lint:planets": "node_modules/.bin/eslint planets.json",
-        "fix:planets": "node_modules/.bin/eslint planets.json --fix"
+        "lint": "eslint planets.json",
+        "fix": "eslint planets.json --fix"
     },
     "repository": {
         "type": "git",
@@ -15,9 +15,8 @@
     "license": "MIT",
     "homepage": "https://github.com/zeitport/eslint-plugin-json#readme",
     "devDependencies": {
-        "eslint-plugin-json-es": "^1.3.0",
-        "eslint": "^7.9.0",
-        "eslint-plugin-sort-keys-fix": "^1.1.1",
-        "eslint-plugin-json-es-test": "file:eslint-plugin-json-es-test"
+        "eslint-plugin-json-es": "^1.5.7",
+        "eslint": "^8.28.0",
+        "eslint-plugin-sort-keys-fix": "^1.1.2"
     }
 }

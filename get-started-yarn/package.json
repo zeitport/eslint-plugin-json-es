@@ -1,0 +1,11 @@
+{
+    "name": "get-started-yarn",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "chris@zeitport.com",
+    "license": "MIT",
+    "dependencies": {
+        "eslint": "^8.28.0",
+        "eslint-plugin-json-es": "^1.5.7"
+    }
+}

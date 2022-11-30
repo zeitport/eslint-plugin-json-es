@@ -1,0 +1,23 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": "eslint:recommended",
+    "overrides": [{
+        "files": ["*.json"],
+        "parser": "eslint-plugin-json-es",
+        "rules":{
+            "comma-dangle": ["error", "never"]
+        }
+    }],
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "rules": {
+        "indent": [
+            "error",
+            4
+        ]
+    }
+}

@@ -71,7 +71,7 @@ _(2) Not every ESLint rule makes sense for JSON_<br>
 ### Readable
 Based on the recommended rules with stylistic aspects.
 
-[./config/readable.js](./config/readable.js)
+[./config/style.js](./config/style.js)
 
 | Auto-fix | Rule                   | Comment |
 |----------|------------------------|---------------------|

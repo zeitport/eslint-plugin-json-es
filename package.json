@@ -10,7 +10,7 @@
         "testui": "vitest --ui",
         "prepublishOnly": "npm test",
         "patch": "npm version patch && auto-changelog",
-        "changelog": "auto-changelog"
+        "changelog": "auto-changelog -c ./auto-changelog.json"
     },
     "files": [
         "README.md",
@@ -46,21 +46,8 @@
     },
     "devDependencies": {
         "@vitest/ui": "^1.5.2",
-        "auto-changelog": "2.4.0",
         "c8": "^9.1.0",
         "eslint": "^8.10.0",
         "vitest": "^1.5.2"
-    },
-    "contributingGuide": {
-        "commitTags": {
-            "Fix": "for a bug fix",
-            "Update": "either for a backwards-compatible enhancement or for a rule change that adds reported problems.",
-            "New": "implemented a new feature.",
-            "Breaking": "for a backwards-incompatible enhancement or feature.",
-            "Docs": "changes to documentation only.",
-            "Build": "changes to build process only.",
-            "Upgrade": "for a dependency upgrade.",
-            "Chore": "for refactoring, adding tests, etc. (anything that isn't user-facing)."
-        }
     }
 }

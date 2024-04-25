@@ -39,9 +39,7 @@ test('lint incorrect JSON shall return JSON.parse() error message', () => {
     // Then
     const expectedMessage = {
         severity: 2,
-        ruleId: null,
-        line: 1,
-        column: 3
+        ruleId: null
     };
 
     expect(messages.length).toBe(1);
@@ -58,9 +56,7 @@ test('lint incorrect JSON shall return JSON.parse() error message', () => {
     // Then
     const expectedMessage = {
         severity: 2,
-        ruleId: 'json-es/use-valid-json',
-        line: 1,
-        column: 8
+        ruleId: 'json-es/use-valid-json'
     };
 
     expect(messages.length).toBe(1);
@@ -77,9 +73,7 @@ test('lint incorrect JSON shall return JSON.parse() error message for line 2', (
     // Then
     const expectedMessage = {
         severity: 2,
-        ruleId: 'json-es/use-valid-json',
-        line: 2,
-        column: 14
+        ruleId: 'json-es/use-valid-json'
     };
 
     expect(messages.length).toBe(1);

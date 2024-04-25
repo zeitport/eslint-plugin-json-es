@@ -80,9 +80,10 @@ Based on the recommended rules with stylistic aspects.
 | | sort-keys |Alternative with fix [eslint-plugin-sort-keys-fix] |
 
 ## Optional Rules
+A list of optional rules that can be added to your configuration.
 
-### use-camelcase
-The ESLint camelcase rule does not work with JSON files.
+### `json-es/use-camelcase`
+The "original" ESLint camelcase rule does not work with JSON files.
 
 A custom 'use-camelcase' [rule](./rules/use-camelcase.js) is available.
 Based on the ESLint camelcase rule with minor adjustments.

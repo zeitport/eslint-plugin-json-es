@@ -11,8 +11,7 @@
         "test": "vitest run",
         "testui": "vitest --ui",
         "prepublishOnly": "npm test",
-        "patch": "npm version patch && auto-changelog",
-        "changelog": "auto-changelog -c ./auto-changelog.json"
+        "patch": "npm version patch"
     },
     "files": [
         "README.md",

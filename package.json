@@ -4,7 +4,9 @@
     "description": "A JSON parser for ESLint.",
     "main": "index.js",
     "scripts": {
-        "lint": "eslint lib",
+        "lint": "npm run lint:lib && npm run lint:rules",
+        "lint:lib": "eslint lib",
+        "lint:rules": "eslint rules",
         "coverage": "c8 --check-coverage --lines 100 npm test",
         "test": "vitest run",
         "testui": "vitest --ui",

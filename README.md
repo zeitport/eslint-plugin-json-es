@@ -79,6 +79,23 @@ Based on the recommended rules with stylistic aspects.
 |🔧| no-multiple-empty-lines | |
 | | sort-keys |Alternative with fix [eslint-plugin-sort-keys-fix] |
 
+## Optional Rules
+
+### use-camelcase
+The ESLint camelcase rule does not work with JSON files.
+
+A custom 'use-camelcase' [rule](./rules/use-camelcase.js) is available.
+Based on the ESLint camelcase rule with minor adjustments.
+
+__Configuration__
+```json
+{
+    "rules": {
+        "json-es/use-camelcase": ["error", {"allow": ["FOO", "[regex]*"]}]
+    }
+}
+```
+
 [ESLint]: https://eslint.org/
 [custom parser]: https://eslint.org/docs/developer-guide/working-with-custom-parsers
 [eslint-plugin-json]: https://github.com/azeemba/eslint-plugin-json

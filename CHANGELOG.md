@@ -2,13 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
-#### Next Version
+#### v1.6.0
 
-- Doc: Updated CHANGELOG.md
+> 25 April 2024
 
-#### v1.5.7
+- Feature: Add `use-camel-case` rule (closes #45)
+- Bump dependencies + npm audit fix
 
-- Doc: Update REAMDE.md
+** Note:** Node.js 16.x is no longer supported (it may or may not work). Node.js 22.x tested.
 
 #### v1.5.6
 

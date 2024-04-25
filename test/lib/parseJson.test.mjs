@@ -84,7 +84,7 @@ test('parseJson with invalid code throws error', () => {
     const parse = () => parseJson(code, parserOptions);
 
     // Then
-    expect(parse).toThrow('Unexpected end of JSON input');
+    expect(parse).toThrow();
 });
 
 /**

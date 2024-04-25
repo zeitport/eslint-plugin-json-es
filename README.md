@@ -1,5 +1,5 @@
 [![NPM version](https://img.shields.io/npm/v/eslint-plugin-json-es.svg)](https://www.npmjs.com/package/eslint-plugin-json-es)
-[![CI status](https://github.com/zeitport/eslint-plugin-json/workflows/ci.yml/badge.svg)](https://github.com/zeitport/eslint-plugin-json-es/actions?query=workflow%3ACI)
+[![CI status](https://github.com/zeitport/eslint-plugin-json-es/actions/workflows/ci.yml/badge.svg?event=push)](https://github.com/zeitport/eslint-plugin-json-es/actions?query=workflow%3ACI)
 [![Downloads](https://img.shields.io/npm/dm/eslint-plugin-json-es.svg)](https://www.npmjs.com/package/eslint-plugin-json-es)
 ![NPM](https://img.shields.io/npm/l/eslint-plugin-json-es)
 

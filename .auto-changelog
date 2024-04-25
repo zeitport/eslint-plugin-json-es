@@ -1,8 +1,0 @@
-{
-    "output": "CHANGELOG.md",
-    "package": true,
-    "unreleased": true,
-    "startingVersion": "v1.5.2",
-    "commitLimit": false,
-    "ignoreCommitPattern": "(?:README)|(?:Build)|(?:Chore)"
-}
